@@ -1,0 +1,885 @@
+/* Основные стили сайта */
+body {
+	font-family: 'Roboto', sans-serif;
+        background-color: #eee;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 70px;
+	text-transform: uppercase;
+}
+
+h1 span {
+	font-size: 65px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+input {
+	background: none;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+i {
+	display: inline-block;
+}
+
+i ::before {
+	position: relative;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 1140px;
+}
+
+.green {
+	color: #50f2c6;
+}
+
+.blue {
+	color: #096db3;
+}
+
+.gray {
+	color: #4f7188;
+}
+
+.request span {
+	color: #50f2c6;
+	font-size: 33px;
+	text-transform: uppercase;
+}
+
+.request .button {
+	padding: 19px 51px 19px 53px;
+	display: inline-block;
+	border-radius: 3px;
+	border: 2px solid #096db3;	
+}
+
+.request .button::hover {
+	border: 2px solid #077dd0;	
+	background: #077dd0;
+	color:#fff;
+}
+
+.request .button:hover span {
+	color:#fff;
+}
+
+.request .button:active {
+	border: 2px solid #045a97;	
+	background: #045a97;
+	color:#fff;
+}
+
+.request .button::active span {
+	color:#fff;
+}
+
+/* Иконки */
+
+.is::before {
+	content: url(../images/icon-slogan.png);
+	height: 58px;
+	left: -2px;
+	position: relative;
+	top: 10px;
+	width: 25px;
+}
+
+.ml:before {
+	content: url(../images/mail-icon.png);
+	height: 18px;
+	left: 11px;
+	position: relative;
+	top: 13px;
+	width: 22px;
+}
+
+.da:before {
+	content: url(../images/down-arrow-icon.png);
+	position: relative;
+	top: 7px;
+}
+
+.gd:before {
+	content: url(../images/advantages-img1.png);
+	position: relative;
+}
+
+.dd:before {
+	content: url(../images/advantages-img2.png);
+	position: relative;
+}
+
+.uk:before {
+	content: url(../images/advantages-img3.png);
+	position: relative;
+}
+
+.zayavka:before {
+	content: url(../images/pr-work1.png);
+}
+
+.sbor:before {
+	content: url(../images/pr-work2.png);
+}
+
+.oplata:before {
+	content: url(../images/pr-work3.png);
+}
+
+.oplata2:before {
+	content: url(../images/pr-work4.png);
+}
+
+.maket:before {
+	content: url(../images/pr-work5.png);
+}
+
+.dev-desing:before {
+	content: url(../images/pr-work6.png);
+}
+
+.link-maket:before {
+	content: url(../images/pr-work7.png);
+}
+
+.zayavka-block::after {
+	content: url(../images/line1.png);
+	position: absolute;
+	right: -105px;
+	top: 65px;
+}
+
+.sbor-block:after {
+	content: url(../images/line2.png);
+	position: absolute;
+	top: 65px;
+}
+
+.oplata-block:after {
+	content: url(../images/line3.png);
+	position: absolute;
+	right: -36px;
+	top: 75px;
+}
+
+.oplata2-block:before {
+	content: url(../images/line6.png);
+	left: -50px;
+	position: absolute;
+	top: 72px;
+}
+
+.maket-block:before {
+	content: url(../images/line5.png);
+	left: -65px;
+	position: absolute;
+	top: 65px;
+}
+
+.dev-block:before {
+	content: url(../images/line4.png);
+	left: -65px;
+	position: absolute;
+	top: 65px;
+}
+
+/* Шапка */
+
+.wrapper {
+	padding-top: 88px;
+}
+
+.header {
+	background: #11191d;
+	border-bottom: 1px solid #2e5f7c;
+	height: 88px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+.logo,
+.menu,
+.mail {
+	position: absolute;
+}
+
+.logo {
+	top: 11px;
+}
+
+.menu {
+	top: 36px;
+	left: 344px;
+}
+
+.menu li {
+	display: inline-block;
+	margin-right: -3px;
+}
+
+.menu li a {
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	color: #96a8b2;
+	font-size: 13px;
+	padding: 10px 28px 9px;
+	text-transform: uppercase;
+}
+
+.menu li a:hover {
+	color: #0872bc;
+}
+
+body .active a {
+	border: 1px solid #096db3;
+	color: #0872bc;
+}
+
+.mail {
+	background-color: #096db3;
+	border-radius: 25px;
+	height: 44px;
+	right: 0;
+	top: 23px;
+	width: 44px;
+}
+
+.mail:hover {
+	background-color: #077dd0;
+}
+
+.mail:active {
+	background-color: #045a97;
+}
+
+/* Оставьте заявку */
+
+.bottom-header {
+	background: #0e191e url(../images/bg-header2.png) no-repeat center -70px;
+}
+
+.bottom-header .container {
+	padding: 72px 170px 153px;
+	text-align: center;
+}
+
+.bottom-header .text {
+	margin-bottom: 121px;
+}
+
+.bottom-header .variety {
+	margin: 114px 0 3px;
+}
+
+.bottom-header .variety,
+.bottom-header .slogan {
+	color: #fff;
+	display: inline-block;
+	font-size: 70px;
+	font-weight: 100;
+	line-height: 73px;
+	text-transform: uppercase;
+}
+
+.bottom-header .slogan {
+	font-size: 50px;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+}
+
+/* кнопка вниз */
+
+.down-arrow {
+	background: rgba(80, 242, 198, 0.3);
+	border-radius: 5px;
+	bottom: 33px;
+	display: inline-block;
+	left: 543px;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+}
+
+.down-arrow a {
+	display: block;
+	padding: 13px 9px;
+}
+
+.down-arrow .da {
+	background: #11191d;
+	border-radius: 25px;
+	display: block;
+	height: 34px;
+	width: 34px;
+}
+
+/* Портфолио */
+
+.portfolio {
+	text-align: center;
+	background: #0e191e url(../images/bg-portfolio.png) no-repeat center -91px;
+	padding-bottom: 250px;
+}
+
+.portfolio .container {
+	padding: 63px 0 0;
+}
+
+.portfolio h2 {margin-bottom: 33px;}
+
+.portfolio p {
+	color: #fff;
+	line-height: 25px;
+	margin-bottom: 26px;
+	padding: 0 160px;
+}
+
+.portfolio .slider {
+	margin-top: 64px;
+} 
+
+.portfolio .thumb {
+	height: 320px;
+   	width: 250px;
+   /* box-shadow: 0 5px 5px fadeout(black, 80%) inset;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .thumb:hover .content {
+	opacity: 1;
+}
+
+.portfolio .wrap {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+}
+
+.portfolio .content {
+	border: 2px solid #fff;
+	height: 100%;
+	padding: 48px;
+    position: absolute;
+    top: 0; left:0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+   
+}
+.portfolio .content .border {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 223px;
+    padding-top: 95px;
+    width: 288px;
+}
+.portfolio .slider .content p {
+	font-size: 17px;
+	line-height: 25px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.portfolio .slider .content .bold {
+	font-weight: 700;
+}
+
+.portfolio .down-arrow {
+	bottom: -180px;
+}
+
+.fancybox-overlay {
+	z-index: 20000;
+}
+
+/* Приемущества работы */
+
+.advantages .container {
+	padding: 92px 0 102px;
+	text-align: center;
+}
+
+.advantages .container h2 {
+	margin-bottom: 51px;
+}
+
+.advantages .container > p {
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+.advantages .down-arrow,
+.process-of-work .down-arrow {background: rgba(80, 242, 198, 1);}
+
+.advantages  .sp-advan {
+	margin: 50px 0 0 170px;
+	text-align: left;
+}
+
+.advantages .sp-advan li {
+	margin-bottom: 50px;
+}
+
+.advantages .sp-advan .images,
+.advantages .sp-advan .text {display: inline-block;}
+
+.advantages .sp-advan .text {
+	font-weight: 700;
+	line-height: 25px;
+	margin-left: 10px;
+	vertical-align: top;
+	width: 615px;
+}
+
+.advantages .sp-advan .text p {
+	color: #4f7188;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+/* Процессы работы */
+
+.process-of-work {
+	background: #f4f6f7;
+}
+
+.process-of-work .container {
+	padding: 90px 0 160px;
+}
+
+.process-of-work ul {
+	margin-top: 68px;
+}
+
+.process-of-work ul li {
+	display: inline-block;
+	margin: 0 25px 50px 0;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 320px;
+}
+
+.process-of-work ul li span {
+	display: inline-block;
+	font-weight: 700;
+	line-height: 25px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.process-of-work li .request button {
+	padding: 15px 40px;
+}
+
+.process-of-work li .request span {
+	color: #1aa37e;
+	font-size: 20px;
+	margin: 0;
+	font-weight: 400;
+}
+
+.link-icon {
+	background: url(../images/up-arrow.png) no-repeat;
+	bottom: 18px;
+	color: #2ac89d;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	height: 74px;
+	padding-top: 45px;
+	position: absolute;
+	right: 0;
+	width: 34px;
+}
+
+/* Подвал */
+.footer {
+	background: #0f2836;
+}
+
+.footer .container {
+	padding: 50px 20px 0;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+
+.request {
+	display: inline-block;
+}
+
+.footer .request {
+	margin-left: 167px;
+}
+
+.fancybox .request .button,
+body .footer .request .button {
+	padding: 10px 35px;
+}
+
+.fancybox .request span,
+body .footer .request span {
+	font-size: 20px;
+	width: 100%;
+	font-weight: 300;
+	color: #1aa37e;
+}
+
+.footer .left {
+	border-right: 1px solid #163749;
+	padding-right: 50px;
+}
+
+.footer .left,
+.footer .right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer .left form,
+.fancybox form {
+	margin: 50px 0 30px;
+}
+
+.footer .left span,
+.fancybox span {
+	text-transform: uppercase;
+	display: inline-block;
+	width: 100px;
+	color: #096db3;
+	vertical-align: top;
+}
+
+.footer .left span,
+.footer .left input,
+.fancybox span,
+.fancybox input {
+	font-size: 14px;
+}
+
+.footer .left input,
+.fancybox input  {
+	border-bottom: 1px solid #0a629f;
+	width: 320px;
+	padding-bottom: 7px;
+	color: #76bce3;
+}
+
+.footer textarea,
+.fancybox textarea {
+	width: 320px;
+	background: none;
+	border: none;
+	color: #22546f;
+	border-bottom: 1px solid #0a629f;
+	padding-bottom: 7px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: "Roboto",sans-serif;
+	height: 26px;
+-webkit-transition-property;	min-height: 26px;
+}
+
+.hide-textarea {
+	padding-bottom: 7px;
+	text-transform: uppercase;
+	font-size: 14px;
+	min-height: 26px;
+	display: none;
+	line-height: 16px;
+}
+
+.footer .input-name,
+.footer .input-mail,
+.footer .input-work,
+.footer .input-massage {
+	margin-bottom: 30px;
+}
+
+.footer .copy {
+	color: #3a6075;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.footer .right {
+	padding-left: 50px;
+}
+
+.footer .right p{ 
+	color: #57aad9;
+	margin: 15px 0;
+}
+
+.footer .right ul {
+	height: 140px;
+}
+
+.footer .right li {
+	display: inline-block;
+	margin-right: 110px;
+	vertical-align: top;
+	width: 25px;
+	font-size: 12px;
+	color:#2b5871;
+	line-height: 20px;
+}
+
+.footer .right li span {
+	display: block;
+	width: 150px;
+}
+
+.footer .right li a.nal,
+.footer .right li a.card {
+	margin-bottom: 70px;
+	display: block;
+}
+
+.footer .right li a:before {
+	opacity: .3;
+	transition: opacity .4s;
+}
+
+.footer .right li a:hover:before {
+	opacity: 1;
+}
+
+.nal:before {
+	content: url(../images/nal-icon.png);
+	position: absolute;
+	width: 78px;
+	height: 66px;
+}
+
+.card:before {
+	content: url(../images/card-icon.png);
+	position: absolute;
+	width: 78px;
+	height: 54px;
+}
+
+.qiwi:before {
+	content: url(../images/qiwi-icon.png);
+	position: absolute;
+	width: 89px;
+	height: 102px;
+}
+/* 
+.qiwi:hover:before {
+	content: url(../images/qiwi-icon-hover.png);
+	position: absolute;
+	width: 89px;
+	height: 102px;
+} */
+
+.yandex:before {
+	content: url(../images/yandex-icon.png);
+	position: absolute;
+	width: 201px;
+	height: 85px;
+}
+
+/* .yandex:hover:before {
+	content: url(../images/yandex-icon-hover.png);
+	position: absolute;
+	width: 201px;
+	height: 85px;
+} */
+
+.footer .right .email,
+.footer .right .skype {
+	display: block;
+	color: #56aad9;
+	padding: 5px 0 0 40px;
+	height: 25px;
+	margin-top: 15px;
+}
+
+.footer .right .email {
+	margin-top: 20px;
+	background: url(../images/mail2-footer-icon.png) no-repeat;
+}
+
+.footer .right .email:hover {
+	background: url(../images/mail2-footer-icon-hover.png) no-repeat;
+}
+
+
+.footer .right .skype {
+	background: url(../images/skype-icon-hover.png) no-repeat;
+}
+
+.footer .right .skype:hover {
+	background: url(../images/skype-icon.png) no-repeat;
+}
+
+
+
+/* fancybox */
+
+.fancybox {
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+	height: 508px;
+	padding-top: 56px;
+	position: relative;
+	text-align: center;
+	width: 505px;
+}
+
+.fancybox form {
+	padding-left: 40px;
+	margin-bottom: 60px;
+}
+
+.fancybox p {
+	margin: 15px 0;
+}
+
+.fancybox .input-name,
+.fancybox .input-mail,
+.fancybox .input-work,
+.fancybox .input-massage {
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.fancybox input {
+	color: #22546f;	
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	background: url(../images/close.png) no-repeat;
+	width: 76px;
+	height: 76px;
+	display: block;
+	position: absolute;
+	top: -65px;
+	left: 220px;
+}
+
+
+/* Спасибо */
+
+.thank {
+	background: #096db3;
+	color: #fff;
+	height: 251px;
+	padding-top: 55px;
+	position: relative;
+	text-align: center;
+	width: 505px;
+	display: none;
+}
+
+.thank p {
+	margin: 15px 0 40px;
+}
+
+.thank .ok {
+	padding: 21px;
+	display: inline-block;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+
+.thank .ok span {
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.thank .ok:hover {
+	background: #015B99;
+	border: 2px solid #fff;
+}
+select option {
+	width: 100%;
+	border: none;
+	background: #fff;
+	padding-left: 5px;
+}
+
+select {
+	width: 320px;
+	color: #76bce3;
+	-webkit-appearance: none;
+	background: transparent url('../images/arrow-select.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	border: none;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
+	border-bottom: 1px solid #0a629f;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	display: inline-block;
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+ 
+select::-ms-expand {
+	display: none;
+}
+
+.fancybox select {
+	color: #22546f;
+}
